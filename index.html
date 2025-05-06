@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 class="heading"><i class="fas fa-tasks"></i> 📝Task Manager</h1>
+        <p class="quote">"Let's become more productive"</p>
+      </div>
+
+      <div class="time-date">
+        <span id="date"></span>
+        <span id="time"></span>
+      </div>
+
+      <p class="err">Please enter task</p>
+      <form id="task-form">
+        <input id="task-input" type="text" placeholder="Add a task" />
+        <textarea id="task-desc" placeholder="Task Description..."></textarea>
+        <button class="add-btn">Add Task</button>
+      </form>
+
+      <div class="search-section">
+        <input type="text" id="search" placeholder="Search a task" />
+        <span class="search-icon">🔍</span>
+      </div>
+
+      <ul class="task-items"></ul>
+
+      <div class="footer">
+        <button class="clear-tasks">Clear All Tasks</button>
+        <div class="completion">Completed: <span id="completion">0%</span></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
